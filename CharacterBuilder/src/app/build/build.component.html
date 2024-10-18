@@ -1,0 +1,49 @@
+<div class="character-builder">
+  <h2>Character Builder</h2>
+
+  <form #characterForm="ngForm">
+    <!-- Eye Type Dropdown -->
+    <div class="form-group">
+      <label for="eye">Eye Type</label>
+      <select id="eye" class="form-control" [(ngModel)]="eye" name="eye">
+        <option value="NoEye">No Eye</option>
+        <option value="HalfOpen">Half Open</option>
+        <option value="Closed">Closed</option>
+        <option value="Open">Open</option>
+      </select>
+    </div>
+
+    <!-- Mouth Type Dropdown -->
+    <div class="form-group">
+      <label for="mouth">Mouth Type</label>
+      <select id="mouth" class="form-control" [(ngModel)]="mouth" name="mouth">
+        <option value="NoMouth">No Mouth</option>
+        <option value="Happy">Happy</option>
+        <option value="Normal">Normal</option>
+        <option value="Unhappy">Unhappy</option>
+      </select>
+    </div>
+
+    <!-- Right Hand Type Dropdown -->
+    <div class="form-group">
+      <label for="rightHand">Right Hand Type</label>
+      <select id="rightHand" class="form-control" [(ngModel)]="rightHand" name="rightHand">
+        <option value="NoHand">No Hand</option>
+        <option value="Normal">Normal</option>
+        <option value="Victory">Victory</option>
+      </select>
+    </div>
+
+    <!-- Has Hammer Checkbox -->
+    <div class="form-group">
+      <label for="hasHammer">Has Hammer</label>
+      <input type="checkbox" id="hasHammer" [(ngModel)]="hasHammeer" name="hasHammer" />
+    </div>
+
+    <!-- Has Tail Checkbox -->
+    <div class="form-group">
+      <label for="hasTail">Has Tail</label>
+      <input type="checkbox" id="hasTail" [(ngModel)]="hasTail" name="hasTail" />
+    </div>
+  </form>
+</div>
